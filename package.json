@@ -1,0 +1,27 @@
+{
+  "name": "silver-octo-audit-helper",
+  "version": "1.0.0",
+  "description": "Contains tools to help with npm audit reports",
+  "main": "./code/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sporrphi/silver-octo-audit-helper.git"
+  },
+  "keywords": [
+    "js",
+    "cli",
+    "npm",
+    "audit",
+    "npm-audit",
+    "vulnerability.json"
+  ],
+  "author": "sporrphi",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sporrphi/silver-octo-audit-helper/issues"
+  },
+  "homepage": "https://github.com/sporrphi/silver-octo-audit-helper#readme"
+}
