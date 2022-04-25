@@ -4,7 +4,9 @@
   "description": "Contains tools to help with npm audit reports",
   "main": "./code/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext .js code/",
+    "lint-fix": "eslint --fix --ext .js code/"
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,13 @@
   "bugs": {
     "url": "https://github.com/sporrphi/silver-octo-audit-helper/issues"
   },
-  "homepage": "https://github.com/sporrphi/silver-octo-audit-helper#readme"
+  "homepage": "https://github.com/sporrphi/silver-octo-audit-helper#readme",
+  "dependencies": {
+    "commander": "^9.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^28.0.0"
+  }
 }
