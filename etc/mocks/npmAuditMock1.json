@@ -1,0 +1,267 @@
+{
+  "actions": [
+    {
+      "action": "update",
+      "resolves": [
+        {
+          "id": 1067342,
+          "path": "jade>mkdirp>minimist",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "minimist",
+      "target": "1.2.6",
+      "depth": 3
+    },
+    {
+      "action": "review",
+      "module": "constantinople",
+      "resolves": [
+        {
+          "id": 1069567,
+          "path": "jade>constantinople",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ]
+    },
+    {
+      "action": "review",
+      "module": "uglify-js",
+      "resolves": [
+        {
+          "id": 1069960,
+          "path": "jade>transformers>uglify-js",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1069961,
+          "path": "jade>transformers>uglify-js",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ]
+    },
+    {
+      "action": "review",
+      "module": "clean-css",
+      "resolves": [
+        {
+          "id": 1070199,
+          "path": "jade>clean-css",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ]
+    }
+  ],
+  "advisories": {
+    "1067342": {
+      "findings": [
+        {
+          "version": "1.2.5",
+          "paths": [
+            "jade>mkdirp>minimist"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<1.2.6",
+      "module_name": "minimist",
+      "severity": "critical",
+      "github_advisory_id": "GHSA-xvch-5gv4-984h",
+      "cves": [
+        "CVE-2021-44906"
+      ],
+      "access": "public",
+      "patched_versions": ">=1.2.6",
+      "cvss": {
+        "score": 9.8,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      },
+      "updated": "2022-04-04T21:39:39.000Z",
+      "recommendation": "Upgrade to version 1.2.6 or later",
+      "cwe": [
+        "CWE-1321"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1067342,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2021-44906\n- https://github.com/substack/minimist/issues/164\n- https://github.com/substack/minimist/blob/master/index.js#L69\n- https://snyk.io/vuln/SNYK-JS-MINIMIST-559764\n- https://stackoverflow.com/questions/8588563/adding-custom-properties-to-a-function/20278068#20278068\n- https://github.com/Marynk/JavaScript-vulnerability-detection/blob/main/minimist%20PoC.zip\n- https://github.com/advisories/GHSA-xvch-5gv4-984h",
+      "created": "2022-03-18T00:01:09.000Z",
+      "reported_by": null,
+      "title": "Prototype Pollution in minimist",
+      "npm_advisory_id": null,
+      "overview": "Minimist <=1.2.5 is vulnerable to Prototype Pollution via file index.js, function setKey() (lines 69-95).",
+      "url": "https://github.com/advisories/GHSA-xvch-5gv4-984h"
+    },
+    "1069567": {
+      "findings": [
+        {
+          "version": "3.0.2",
+          "paths": [
+            "jade>constantinople"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<3.1.1",
+      "module_name": "constantinople",
+      "severity": "critical",
+      "github_advisory_id": "GHSA-4vmm-mhcq-4x9j",
+      "cves": [],
+      "access": "public",
+      "patched_versions": ">=3.1.1",
+      "cvss": {
+        "score": 10,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N"
+      },
+      "updated": "2021-08-16T16:06:39.000Z",
+      "recommendation": "Upgrade to version 3.1.1 or later",
+      "cwe": [],
+      "found_by": null,
+      "deleted": null,
+      "id": 1069567,
+      "references": "- https://github.com/pugjs/constantinople/commit/01d409c0d081dfd65223e6b7767c244156d35f7f\n- https://bugzilla.redhat.com/show_bug.cgi?id=1577703\n- https://nodesecurity.io/advisories/568\n- https://www.npmjs.com/advisories/568\n- https://snyk.io/vuln/npm:constantinople:20180421\n- https://github.com/advisories/GHSA-4vmm-mhcq-4x9j",
+      "created": "2019-06-14T16:15:14.000Z",
+      "reported_by": null,
+      "title": "Sandbox Bypass Leading to Arbitrary Code Execution in constantinople",
+      "npm_advisory_id": null,
+      "overview": "Versions of `constantinople` prior to 3.1.1 are vulnerable to a sandbox bypass which can lead to arbitrary code execution.\n\n\n## Recommendation\n\nUpdate to version 3.1.1 or later.",
+      "url": "https://github.com/advisories/GHSA-4vmm-mhcq-4x9j"
+    },
+    "1069960": {
+      "findings": [
+        {
+          "version": "2.2.5",
+          "paths": [
+            "jade>transformers>uglify-js"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<2.4.24",
+      "module_name": "uglify-js",
+      "severity": "critical",
+      "github_advisory_id": "GHSA-34r7-q49f-h37c",
+      "cves": [
+        "CVE-2015-8857"
+      ],
+      "access": "public",
+      "patched_versions": ">=2.4.24",
+      "cvss": {
+        "score": 9.8,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      },
+      "updated": "2021-10-29T14:15:03.000Z",
+      "recommendation": "Upgrade to version 2.4.24 or later",
+      "cwe": [
+        "CWE-1254"
+      ],
+      "found_by": null,
+      "deleted": null,
+      "id": 1069960,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2015-8857\n- https://github.com/mishoo/UglifyJS2/issues/751\n- https://github.com/advisories/GHSA-34r7-q49f-h37c\n- https://www.npmjs.com/advisories/39\n- https://zyan.scripts.mit.edu/blog/backdooring-js/\n- https://nodesecurity.io/advisories/39\n- http://www.openwall.com/lists/oss-security/2016/04/20/11\n- http://www.securityfocus.com/bid/96410",
+      "created": "2017-10-24T18:33:36.000Z",
+      "reported_by": null,
+      "title": "Incorrect Handling of Non-Boolean Comparisons During Minification in uglify-js",
+      "npm_advisory_id": null,
+      "overview": "Versions of `uglify-js` prior to 2.4.24 are affected by a vulnerability which may cause crafted JavaScript to have altered functionality after minification.\n\n## Recommendation\n\nUpgrade UglifyJS to version >= 2.4.24.",
+      "url": "https://github.com/advisories/GHSA-34r7-q49f-h37c"
+    },
+    "1069961": {
+      "findings": [
+        {
+          "version": "2.2.5",
+          "paths": [
+            "jade>transformers>uglify-js"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<2.6.0",
+      "module_name": "uglify-js",
+      "severity": "high",
+      "github_advisory_id": "GHSA-c9f4-xj24-8jqx",
+      "cves": [
+        "CVE-2015-8858"
+      ],
+      "access": "public",
+      "patched_versions": ">=2.6.0",
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "updated": "2021-09-08T21:59:09.000Z",
+      "recommendation": "Upgrade to version 2.6.0 or later",
+      "cwe": [],
+      "found_by": null,
+      "deleted": null,
+      "id": 1069961,
+      "references": "- https://nvd.nist.gov/vuln/detail/CVE-2015-8858\n- https://github.com/advisories/GHSA-c9f4-xj24-8jqx\n- https://www.npmjs.com/advisories/48\n- https://nodesecurity.io/advisories/48\n- http://www.openwall.com/lists/oss-security/2016/04/20/11\n- http://www.securityfocus.com/bid/96409",
+      "created": "2017-10-24T18:33:36.000Z",
+      "reported_by": null,
+      "title": "Regular Expression Denial of Service in uglify-js",
+      "npm_advisory_id": null,
+      "overview": "Versions of `uglify-js` prior to 2.6.0 are affected by a regular expression denial of service vulnerability when malicious inputs are passed into the `parse()` method.\n\n\n### Proof of Concept\n\n```\nvar u = require('uglify-js');\nvar genstr = function (len, chr) {\n    var result = \"\";\n    for (i=0; i<=len; i++) {\n        result = result + chr;\n    }\n\n    return result;\n}\n\nu.parse(\"var a = \" + genstr(process.argv[2], \"1\") + \".1ee7;\");\n```\n\n### Results\n```\n$ time node test.js 10000\nreal\t0m1.091s\nuser\t0m1.047s\nsys\t0m0.039s\n\n$ time node test.js 80000\nreal\t0m6.486s\nuser\t0m6.229s\nsys\t0m0.094s\n```\n\n\n## Recommendation\n\nUpdate to version 2.6.0 or later.",
+      "url": "https://github.com/advisories/GHSA-c9f4-xj24-8jqx"
+    },
+    "1070199": {
+      "findings": [
+        {
+          "version": "3.4.28",
+          "paths": [
+            "jade>clean-css"
+          ]
+        }
+      ],
+      "metadata": null,
+      "vulnerable_versions": "<4.1.11",
+      "module_name": "clean-css",
+      "severity": "low",
+      "github_advisory_id": "GHSA-wxhq-pm8v-cw75",
+      "cves": [],
+      "access": "public",
+      "patched_versions": ">=4.1.11",
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "updated": "2022-04-19T19:03:26.000Z",
+      "recommendation": "Upgrade to version 4.1.11 or later",
+      "cwe": [],
+      "found_by": null,
+      "deleted": null,
+      "id": 1070199,
+      "references": "- https://github.com/jakubpawlowicz/clean-css/commit/2929bafbf8cdf7dccb24e0949c70833764fa87e3\n- https://www.npmjs.com/advisories/785\n- https://github.com/advisories/GHSA-wxhq-pm8v-cw75",
+      "created": "2019-06-05T20:50:16.000Z",
+      "reported_by": null,
+      "title": "Regular Expression Denial of Service in clean-css",
+      "npm_advisory_id": null,
+      "overview": "Version of `clean-css` prior to 4.1.11 are vulnerable to Regular Expression Denial of Service (ReDoS). Untrusted input may cause catastrophic backtracking while matching regular expressions. This can cause the application to be unresponsive leading to Denial of Service.\n\n\n## Recommendation\n\nUpgrade to version 4.1.11 or higher.",
+      "url": "https://github.com/advisories/GHSA-wxhq-pm8v-cw75"
+    }
+  },
+  "muted": [],
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 1,
+      "moderate": 0,
+      "high": 1,
+      "critical": 3
+    },
+    "dependencies": 100,
+    "devDependencies": 0,
+    "optionalDependencies": 1,
+    "totalDependencies": 101
+  },
+  "runId": "07c42801-8d69-466b-a59d-0f0e83f5931b"
+}

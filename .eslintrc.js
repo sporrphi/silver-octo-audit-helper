@@ -7,6 +7,9 @@ module.exports = {
   "extends": [
     "google",
   ],
+  "ignorePatterns": [
+    "jest.config.js",
+  ],
   "parserOptions": {
     "ecmaVersion": "latest",
   },

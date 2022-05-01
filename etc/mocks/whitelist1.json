@@ -1,0 +1,14 @@
+{
+  "whitelist": [
+    {
+      "id": 1067342,
+      "module_name": "minimist",
+      "description": "Code not used in prod."
+    },
+    {
+      "id": 1069960,
+      "module_name": "uglify-js",
+      "description": "Not relevant."
+    }
+  ]
+}

@@ -4,7 +4,7 @@
   "description": "Contains tools to help with npm audit reports",
   "main": "./code/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "lint": "eslint --ext .js code/",
     "lint-fix": "eslint --fix --ext .js code/"
   },
@@ -27,7 +27,8 @@
   },
   "homepage": "https://github.com/sporrphi/silver-octo-audit-helper#readme",
   "dependencies": {
-    "commander": "^9.2.0"
+    "commander": "^9.2.0",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "eslint": "^8.14.0",
